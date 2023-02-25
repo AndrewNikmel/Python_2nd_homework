@@ -5,12 +5,14 @@
 # Input: 5
 # Output: 120
 
-n = int(input("Enter your number: "))
-i = n - 1
-result = 0
-while i > 1:
-    result = i * (i - 1)
-print(f"The factorial of {n} is {result}")
+n = int(input("Enter your positive number over 0:  "))
+count = 1
+factorial = 1
+while count <= n:
+    factorial *= count
+    count += 1
+print(factorial)
+
 
 # Дано натуральное число A > 1. 
 # Определите, каким по счету числом 
